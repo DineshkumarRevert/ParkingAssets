@@ -1,0 +1,573 @@
+/* Empty. Add your own CSS if you like */
+.signup-title
+{
+	margin-top: 15%;
+	text-align: center;
+	color: #d2d2cb;
+}
+
+.signup-title >div:nth-child(1)
+{
+	font-size:30px;
+}
+
+.signup-title >div:nth-child(2)
+{
+	padding-top:15px;
+	font-size:20px;
+}
+.option-buttons
+{
+	position:relative;
+	top:65%	;
+}
+
+.option-buttons button
+{
+	
+	color: #cecdc8;
+	border: 0.5px solid gray;
+	background: transparent;
+	box-shadow: inset 1px 1px 10px 0px #545050, inset -1px -1px 20px 1px #545050
+}
+.user-input{
+	margin-bottom: 10%;
+	background: transparent;
+	border: 0px;
+	border-bottom: 1px solid #0e0e0e;
+}
+
+.user-input input,.user-input input::placeholder
+{
+	color: white; 
+	font-size:17px;
+}
+.user-page
+{
+	margin-top:50%;
+}
+
+.login-button	
+{
+	width:100%;
+	margin-top:4%;
+	height:35px;
+	color:white;
+	font-size:17px;
+	background-color:#095a59
+}
+.list
+{
+	margin: 15%;
+}
+
+
+.playlists .item-input-inset{
+	border:0px;
+	background: transparent;
+}
+
+.playlists .item-input-wrapper{
+	background: transparent;
+	border: 0px;
+	border-radius: 0px;
+	border-bottom: 1px solid #6e6c77;
+}
+.playlists .item-input-wrapper input , .playlists .item-input-wrapper input::placeholder
+{
+	color:white;
+	font-size:15px;
+}
+
+.playlists .button.button-royal
+{
+	background-color:#0a555a
+}
+
+.dashboard-alerts
+{
+	margin: 5%;
+	box-shadow: 1px 1px 11px #7dc6d9;
+	border-radius: 7px;
+	background-image: linear-gradient(to right,#efeeee 1%,transparent 99%);
+	padding: 5%;
+	font-size: 15.4px;
+}
+.outer-content {
+	background-color: rgba(0, 0, 0, 0.5) !important;
+	margin: 0px;
+	height: 18vh;
+	border-radius: 7px;
+	width: 100%;
+}
+
+.content-box .icon {
+	height: 22vh;
+}
+
+.content-box .flex {
+	color: #cecdc8;
+	border: 0.5px solid gray;
+	background: rgba(0, 0, 0, 0.5);
+	box-shadow: inset 1px 1px 10px 0px #545050, inset -1px -1px 20px 1px #545050
+}
+
+.content-value {
+	text-align: center;
+	color: white;
+}
+
+.icon_playlist {
+	height: 130px;
+	width: 100px;
+	position: relative;
+	left: 25px;
+	margin-top: 5px;
+}
+
+.scroll {
+	height: 100%;
+}
+
+#pageContent {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 100%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.playlist_text {
+	color: white;
+	font-size: 15px;
+	font-weight: bolder;
+	font-family: fantasy;
+	/* margin: 10px; */
+}
+
+.centerImg {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	height: 100px;
+	width: 120px;
+}
+.centerImg2{    
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 120px;
+}
+
+.playlist_text p {
+	text-align: center;
+}
+
+.button {
+	background-color: rgba(0, 0, 0, 0.5);
+	color: white;
+	font-family: fantasy;
+	font-weight: 900;
+	font-size: 20px;
+	
+}
+.outer-content1 {
+	background-color: rgba(0, 0, 0, 0.5) !important;
+	margin: -3px;
+	height: 24vh;
+	border-radius: 10px;
+}
+
+.content-box1 .icon {
+	height: 22vh;
+}
+
+.content-box1 .flex1 {
+	color: #cecdc8;
+	border: 0.5px solid gray;
+	background: rgba(0, 0, 0, 0.5);
+	box-shadow: inset 1px 1px 10px 0px #545050, inset -1px -1px 20px 1px #545050
+}
+
+.content-value1 {
+	text-align: center;
+	color: white;
+}
+
+.icon_playlist1 {
+	height: 130px;
+	width: 100px;
+	position: relative;
+	left: 25px;
+	margin-top: 5px;
+}
+
+
+.playlist_text1 {
+	color: white;
+	font-size: 17px;
+	font-weight: bolder;
+	font-family: fantasy;
+	margin: 10px;
+}
+
+.centerImg1 {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	height: 75px;
+	width: 75px;
+}
+
+.playlist_text1 p {
+	text-align: center;
+}
+.custom-popup.popup-container .popup {
+	background-color: white;
+}
+ion-content{
+	background: url(img/parkig-bg.jpg);
+	background-size: cover;
+	background-position: center;
+}
+.parking{
+	background: #524c4cee;
+	color: #fff;
+}
+.parking .vehicleno{
+	margin-top: 3%;
+}
+.parking .col img{
+	width: 15%;
+	display: inline-block;
+	vertical-align: middle;
+	height: 100%;
+}
+.parking .col p{
+	display: inline-block;
+}
+
+.parking-section .col img{
+	width: 100%;
+}
+.parking-section .range-outer{
+	height: 77%;
+	background: #fff;
+	border-radius: 10px;
+	transform: rotate(180deg);
+}
+.parking-section .range-inner{
+	background: #36a735;
+	height: 75%;
+	position: relative;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+.parking-section .range-inner p{
+	position: absolute;
+	top: 50%;
+	left: 25%;
+	transform:rotate(180deg);
+	font-size: 1.3em;
+}
+.parking-section .fc-range-outer{
+	height: 77%;
+	background: #fff;
+	border-radius: 10px;
+	transform: rotate(180deg);
+}
+.parking-section .fc-range-inner{
+	background: #feba14;
+	height: 50%;
+	position: relative;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+.parking-section .fc-range-inner div {
+	width: 100%;
+	margin: auto;
+	text-align: center;
+	position: fixed;
+	top: 45%;
+	transform: rotate(180deg);
+	font-size: 1.3em;
+}
+
+.parking-section p{
+	text-align: center;
+	color: #fff;
+	margin: 2px 0px;
+}
+.parking-section .col-60{
+	position: relative;
+}
+.parking-section .col-60 p{
+	position: absolute;
+	top: 14%;
+	display: block;
+	width: 100%;
+	font-size: 1.8em;
+}
+.parking-section .col-60 p:nth-of-type(2){
+	top: 31%;
+	font-size: 3em;
+}
+.parking-time{
+	margin-bottom: 60px;
+}
+.parking-time legend{
+	padding: 0;
+	color: #fff;
+	font-size: 16px;
+	line-height: 1.3;
+	width: auto;
+	border: 0px;
+}
+.parking-time fieldset{
+	border: 1px solid #fff;
+	padding: 0.1em 0.5em;
+}
+.parking-time p{
+	text-align: center;
+	color:#fff;
+}
+.parking-time .col {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+}
+.parking-time .col p{
+	margin-bottom: 6px;
+	font-size: 1.4em;
+}
+.own-tab{
+	background: transparent;
+	border: 0px;
+}
+.own-tab img{
+	height: 100%;
+}
+/*.parking-section img.parking-car::before{
+	content: "";
+	
+}*/
+ion-content{
+	background: url(../img/backgroundForDb.png);
+	background-size: cover;
+	background-position: center;
+}
+.parking {
+    position: sticky;
+    top: 0px;
+    background: #524c4c;
+    color: #fff;
+    z-index:5;
+}
+.parking .vehicleno{
+	margin-top: 3%;
+}
+.parking .col img{
+	width: 15%;
+	display: inline-block;
+	vertical-align: middle;
+	height: 100%;
+}
+.parking .col p{
+	display: inline-block;
+}
+
+.parking-section .col img{
+	width: 100%;
+}
+.parking-section .range-outer{
+	height: 77%;
+	background: #fff;
+	border-radius: 10px;
+	transform: rotate(180deg);
+}
+.parking-section .range-inner{
+	background: #36a735;
+	height: 75%;
+	position: relative;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+.parking-section .range-inner div {
+	width: 100%;
+	text-align: center;
+	position: fixed;
+	top: 45%;
+	transform: rotate(180deg);
+	font-size: 1.3em;
+}
+.parking-section .fc-range-outer{
+	height: 77%;
+	background: #fff;
+	border-radius: 10px;
+	transform: rotate(180deg);
+}
+.parking-section .fc-range-inner{
+	background: #feba14;
+	height: 50%;
+	position: relative;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+.parking-section p{
+	text-align: center;
+	color: #fff;
+	margin: 2px 0px;
+}
+.parking-section .col-60{
+	position: relative;
+}
+.parking-section .col-60 p{
+	position: absolute;
+	top: 14%;
+	display: block;
+	width: 100%;
+	font-size: 1.8em;
+}
+.parking-section .col-60 p:nth-of-type(2){
+	top: 31%;
+	font-size: 3em;
+}
+.parking-time{
+	margin-bottom: 60px;
+}
+.parking-time legend{
+	padding: 0;
+	color: #fff;
+	font-size: 16px;
+	line-height: 1.3;
+	width: auto;
+	border: 0px;
+}
+.parking-time fieldset{
+	border: 1px solid #fff;
+	padding: 0.1em 0.5em;
+}
+.parking-time p{
+	text-align: center;
+	color:#fff;
+}
+.parking-time .col {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+}
+.parking-time .col p{
+	margin-bottom: 6px;
+	font-size: 1.4em;
+}
+.own-tab{
+	background: transparent;
+	border: 0px;
+}
+.own-tab img{
+	height: 100%;
+}
+.popup-container.custom-popup .popup {
+	padding: 0px;
+}
+
+.popup-container.custom-popup .popup .popup-head {
+	box-shadow: 6px 9px 17px #000;
+	margin-bottom: 7px;
+	border: 0px;
+	background: #F6b221;
+}
+
+.popup-container.custom-popup .popup .popup-head h3 {
+	font-weight: bold;
+	letter-spacing: 1px;
+	color: #000;
+	font-size: 18px;
+}
+
+.popup-container.custom-popup .popup .popup-body {
+	border: 0px;
+}
+.bottom-nav
+{
+	height: 55px;
+	padding: 10px;background: url(../img/backgroundForDb.png);
+	background-size: cover;
+	background-position: bottom;
+	
+}
+ion-header-bar.bar.bar-header
+{
+	display: block;
+	text-align: center;
+}
+.histroy-options {
+ position: relative;
+ top: calc(100vh - 85px);
+ background-color: #b1ac9f;
+ padding: 0;
+ height: 85px;
+ }
+
+ .histroy-content {
+top: 88px;
+margin-bottom: 85px;
+background: linear-gradient(30deg, #3f87a6, #ebf8e1, #f69d3c);
+
+	text-align: center;
+	z-index: 2;
+ }
+.histroy-options .outer-label{
+	padding: 1px;
+	background: transparent;
+	border: 0;
+	margin: 0 2px;
+}
+.histroy-options .input-value{
+	padding: 0;
+	margin-top: -8px;
+	font-size: 12px;
+}
+.histroy-options .submit-button
+{
+	display: block;
+	margin: 0 auto;
+	background-color: goldenrod;
+	padding: 4px 10px;
+	font-family: "-apple-system", "Helvetica Neue", "Roboto", "Segoe UI", sans-serif;
+}
+
+.histroy-table-header {
+	position: fixed;
+	top: 44px;
+	z-index: 1;
+	height: 44px;
+	background-color: #b1ac9f;
+	text-align: center;
+}
+
+
+.histroy-content [ng-repeat]:nth-child(even)
+{
+	background-color: #efeeee;
+}
+
+.histroy-content [ng-repeat]:nth-child(odd)
+{
+	background-color: #fff;
+}
+.operation-buttons
+{
+   position: relative;
+   top: 75vh;
+}
+.histroy-options .input-value{
+padding: 0;
+margin-top: 0px;
+font-size: 12px;
+}
+html,body {
+	overflow: scroll;
+}

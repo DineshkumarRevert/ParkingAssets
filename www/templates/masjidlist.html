@@ -1,0 +1,32 @@
+<ion-view hide-nav-bar=true>
+	<ion-header-bar class="bar-stable bar bar-header" align-title="center"
+		style="background:goldenrod;font-size: x-large;color: azure;padding: 13px;">{{heading}}
+		<i class="icon ion-arrow-left-c" style="position:absolute;left:3%" ng-click="gobackFrmMasjid()"></i>
+	</ion-header-bar>
+	</ion-header-bar>
+	<ion-content style="background:url('img/backgroundForDb.png')" ;>
+		<div ng-repeat="x in listOfMasjidsasd | orderBy : 'distance'">
+			<div class="card" style="border-radius: 10px;margin:5px 10px;"
+				ng-click="masjidSelected(heading,this.x.geometry.location.lat,this.x.geometry.location.lng)">
+				<div class="row">
+					<div class="col col-20"><img src="img/logo.png" style="height:50px;"></div>
+					<div class="col col-60">
+						<div class="row" style="font-weight:900;font-size:15px;">
+							{{x.name}}
+						</div>
+						<div class="row">
+							{{x.vicinity}}
+						</div>
+					</div>
+					<div class="col col-20">
+						<div class="row"><img src="img/hand.png" style="height: 58px;"></div>
+						<div class="row" style="padding-left: 20px; padding-top: 10px;">
+							{{x.distance}}
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</ion-content>
+</ion-view>

@@ -1,0 +1,48 @@
+{
+  "name": "ParkingAssets",
+  "integrations": {
+    "gulp": {},
+    "cordova": {}
+  },
+  "type": "ionic1",
+  "watchPatterns": [
+    "scss/**/*",
+    "www/**/*",
+    "!www/lib/**/*",
+    "!www/**/*.map"
+  ],
+  "proxies": [
+    {
+      "path": "/api1",
+      "proxyUrl": "http://54.255.188.44"
+    },
+    {
+      "path": "/api4",
+      "proxyUrl": "http://127.0.0.1:8080"
+    },
+    {
+      "path": "/api2",
+      "proxyUrl": "http://52.29.95.93"
+    },
+    {
+      "path": "/api3",
+      "proxyUrl": "http://10.10.212:9080"
+    },
+    {
+      "path": "/api6",
+      "proxyUrl": "http://34.232.238.80:8090/Web"
+    },
+    {
+      "path": "/api5",
+      "proxyUrl": "http://34.232.238.80:8090/Admin"
+    },
+    {
+      "path": "/api",
+      "proxyUrl": "http://18.208.64.102:8080"
+    },
+    {
+      "path": "/api7",
+      "proxyUrl": "http://54.251.251.184:8080/Admin"
+    }
+  ]
+}

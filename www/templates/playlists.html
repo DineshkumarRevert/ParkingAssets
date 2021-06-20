@@ -1,0 +1,52 @@
+<ion-view hide-nav-bar=true style= "background-image: url('img/bg.png');background-repeat: no-repeat;background-size: cover;">
+  <ion-content>
+    <!-- <ion-list>
+      <ion-item ng-repeat="playlist in playlists" href="#/app/playlists/{{playlist.id}}">
+        {{playlist.title}}
+      </ion-item>
+    </ion-list> -->
+    <!-- <h2 style = "text-align: center">Enter User Details</h2> -->
+    <h2 style="text-align: center; margin: 10%;color:white;">User Details</h2>
+		<form name = "userData" novalidate class="playlists">
+			<div class = "list">
+				<div class="item item-input-inset">
+					<Label class = "item-input-wrapper" >
+						<input name="mailName" type = "text" ng-model = "userDetails.mail" placeholder="Mail Id" ng-required = "true">
+          </Label>
+          </div>
+          <button class = "button button-block button-royal" style="background-color:goldenrod" ng-disabled = "userData.mailName.$invalid" ng-click ="getOTP(userDetails.mail)">get OTP</button>	
+        <div ng-show="mail=='true'">
+        <div class="item item-input-inset">
+					<Label class = "item-input-wrapper" >
+						<input name="otp" type = "text" ng-model = "userDetails.otp" placeholder="OTP" ng-required = "true"	>
+					</Label>
+        </div>
+        <button class = "button button-block button-royal" style="background-color:goldenrod" ng-disabled = "userData.otp.$invalid" ng-click ="checkOtp(userDetails.otp)">Check OTP</button>
+        </div>	
+        <div ng-show="otpValidation=='true'">
+				<div class="item item-input-inset">
+					<Label class = "item-input-wrapper" >
+						<input name = "userName" type = "text" ng-model = "userDetails.name" placeholder="Name" required>
+					</Label>
+        </div>
+        <div class="item item-input-inset">
+					<Label class = "item-input-wrapper" >
+						<input name = "password" type = "text" ng-model = "userDetails.password" placeholder="password"required>
+					</Label>
+				</div>
+				<div class="item item-input-inset">
+					<Label class = "item-input-wrapper" >
+						<input name = "plateNo" type = "text" ng-model = "userDetails.plateNo" placeholder="Plate Number" required>
+					</Label>
+				</div>
+				<div class="item item-input-inset">
+					<Label class = "item-input-wrapper" >
+						<input name = "model" type = "text" ng-model = "userDetails.model" placeholder="Asset Model" required>
+					</Label>
+        </div>
+        <button class = "button button-block button-royal" style="background-color:goldenrod" ng-disabled = "userData.userName.$invalid && userData.password.$invalid && userData.plateNo.$invalid && userData.model.$invalid" ng-click ="setUserDetails(userDetails.name,userDetails.password,userDetails.plateNo,userDetails.model)">submit</button>	
+    </div>
+</div>
+</form>
+  </ion-content> 
+</ion-view>

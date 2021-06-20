@@ -1,0 +1,100 @@
+<ion-view hide-nav-bar=true>
+	<ion-header-bar class="bar-stable bar bar-header" align-title="center" style="background: goldenrod;font-size: x-large;color: azure;padding: 13px;">Dashboard
+	</ion-header-bar>
+	<ion-content>
+		<!-- header -->
+		<div class="parking">
+			<div class="row">
+				<div class="col col-50"><p class="vehicleno">{{vehicleDetails.vehicleName}}</p></div>
+				<div class="col col-50 text-right">
+					<p>Parking Map </p>
+					<img src="img/map.png" ng-click ="showParkingMap()"> 
+				</div>
+			</div>
+		</div>
+		
+		<!-- parking car section -->
+		
+		<div class="row parking-section">
+			<div class="col col-20">
+				<p>General</p>
+				<div class="range-outer">
+					<div class="range-inner" ng-style=generalParkingPercentage style="border-radius: 10px"><div>{{vehicleDetails.generalParkingPercentage}}</div></div>
+				</div>
+				<p>{{vehicleDetails.generalParking}}</p>
+			</div>
+			<div class="col col-60"><img  ng-src={{image}} class="parking-car">
+				<p>Parking</p>
+				<p>{{vehicleDetails.parkingSlot}}</p>
+			</div>
+			<div class="col col-20">
+				<p>VIP/HC</p>
+				<div class="fc-range-outer">
+					<div class="fc-range-inner" ng-style=vipParkingPercentage style="border-radius: 10px"><div>{{vehicleDetails.vipParkingPercentage}}</div></div>
+				</div>
+				<p>{{vehicleDetails.vipParking}}</p>
+			</div>
+		</div>
+		<div class="row responsive-lg parking-time">
+			<div class="col">
+				<form>
+					<fieldset>
+						<legend>Last Entry</legend>
+						<div class="row">
+							<div class="col col-50">
+								<p>Time</p>
+								<p>{{vehicleDetails.lastEntryTiming}}</p>
+							</div>
+							<div class="col col-50">
+								<p>Date</p>
+								<p>{{vehicleDetails.lastEntryDate}}</p>
+							</div>
+						</div>
+					</fieldset>
+				</form>
+			</div>
+			<div class="col">
+				<form>
+					<fieldset>
+						<legend>Exit On</legend>
+						<div class="row">
+							<div class="col col-50">
+								<p>Time</p>
+								<p>{{vehicleDetails.lastExitTiming}}</p>
+							</div>
+							<div class="col col-50">
+								<p>Date</p>
+								<p>{{vehicleDetails.lastExitDate}}</p>
+							</div>
+						</div>
+					</fieldset>
+				</form>
+			</div>
+			<div class="col">
+				<form>
+					<fieldset>
+						<legend>Total Parking Hrs</legend>
+						<div class="row">
+							<div class="col">
+								<p>{{vehicleDetails.totalTime}}</p>
+							</div>
+						</div>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+	</ion-content>
+	<div class = "tabs own-tab bottom-nav">
+		<a class = "tab-item">
+			<img src="img/alert.png" ng-click="showSelected('alerts')">
+		</a>
+		
+		<a class = "tab-item">
+			<img src="img/history.png" ng-click="showSelected('history')">
+		</a>
+		<a class = "tab-item">
+			<img src="img/masjid.png" ng-click="showSelected('single')">
+		</a>
+	</div>
+	
+</ion-view>

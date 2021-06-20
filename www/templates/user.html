@@ -1,0 +1,25 @@
+<ion-view hide-nav-bar="true" style="background-color:goldenrod">
+  <ion-content style= "background-image: url('img/backgroundForDb.png');background-repeat: no-repeat;background-size: cover;">
+    <h2 style="text-align: center;margin: 10%;color:white;">User Login</h2>
+      <form name ="logDetails" class="user-page">
+          <div class="list">
+          <label class="item item-input user-input" >
+            <input name="mailId"  type = "text" ng-model = "userDetails.mail" placeholder="Mail Id" ng-required = "true">
+          </label>
+          
+         <label class="item item-input user-input">
+            <input name = "pwd" type = "password" ng-model = "userDetails.password" placeholder="Password" ng-required = "true">          
+          </label>
+           <span ng-click="forgetPassword(userDetails.mail)" style="color: white">Forgot Password?</span>
+          <button class = "button button-small login-button" style="background-color:goldenrod" ng-disabled = "logDetails.mailId.$invalid && logDetails.pwd.$invalid" ng-click ="getLogin(userDetails.mail,userDetails.password)">Login</button>
+        </div>
+      </form>
+        </ion-content>
+</ion-view>
+<!-- <ion-modal-view id="forgetModal">
+    <label class="item item-input user-input" >
+        <input name="mailId"  type = "text" ng-model = "mailingId" placeholder="Mail Id" ng-required = "true">
+        </label>
+        <button class = "button button-small login-button"  ng-disabled = "mailId.$invalid" ng-click ="getPassword(mailingId)">send</button>
+
+</ion-modal-view> -->

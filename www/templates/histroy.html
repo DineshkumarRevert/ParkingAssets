@@ -1,0 +1,43 @@
+<ion-view hide-nav-bar=true>
+	<ion-header-bar class="bar-stable bar bar-header" align-title="center" style="background: goldenrod;font-size: x-large;color: azure;padding: 13px;">History
+			<i class="icon ion-arrow-left-c" style="position:absolute;left:3%" ng-click = "gobackFrmHistory()"></i>
+	</ion-header-bar>
+	<div id="content">
+		<div class="row histroy-table-header">
+			<div class="col col-14">P.No</div>
+			<div class="col col-33">Entry Time</div>
+			<div class="col col-33">Exit Time</div>
+			<div class="col col-20">Hours</div>
+		</div>
+		<ion-content class="histroy-content">
+			<div ng-repeat="x in histroy">
+				<div class="row">
+					<div class="col col-10">{{x.parkingNumber}}</div>
+					<div class="col col-35" >{{x.entryTime}}</div>
+					<div class="col col-35" >{{x.exitTime}}</div>
+					<div class="col col-20" >{{x.duration}}</div>
+				</div>
+			</div>
+		</ion-content>
+	</div>
+	<div class="histroy-options">
+		<div class="row">
+			<div class="col col-50"><label class="item item-input outer-label">
+				<span class="input-label input-label">From</span>
+				<input class="input-value" type="date" ng-model="date.from" name="from" required>
+			</label></div>
+			<div class="col col-50"><label class="item item-input outer-label">
+				<span class="input-label input-label">To</span>
+				<input class="input-value" type="date" ng-model="date.to" name="to" required>
+			</label></div>
+		</div>
+		<div class="row">
+			<button  ng-click="formHistroyData()" class="submit-button" >
+				Submit
+			</button>
+			<button ng-click="exportPDF()" ng-hide = true class="submit-button">
+				Download
+			</button>
+		</div>
+	</div>
+</ion-view>

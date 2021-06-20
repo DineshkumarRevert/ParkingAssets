@@ -1,0 +1,25 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-geolocation": {
+      "PACKAGE_NAME": "com.ionicframework.parkingassets248621"
+    },
+    "phonegap-plugin-barcodescanner": {
+      "ANDROID_SUPPORT_V4_VERSION": "27.+",
+      "PACKAGE_NAME": "com.ionicframework.parkingassets248621"
+    },
+    "cordova-plugin-firebase": {
+      "PACKAGE_NAME": "com.ionicframework.parkingassets248621"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "com.ionicframework.parkingassets248621"
+    }
+  },
+  "dependent_plugins": {}
+}

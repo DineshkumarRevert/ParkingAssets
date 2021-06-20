@@ -1,0 +1,31 @@
+<ion-view hide-nav-bar="true">
+	<ion-content style="background-image: url('img/mainBackground.png');background-repeat: no-repeat;background-size: cover;">
+		<div id="pageContent">
+			<div class="row">
+				<div class="col col-50" ng-click="showDetails('Masjid Parking')">
+							<img class="centerImg" src="img/masjidParking.png">
+				</div>
+				<div class="col col-50 content-box">
+						<img class="centerImg" src="img/ramadanBook.png">			
+					</div>
+			</div>
+			<div class="row">
+				<div class="col col-50" ng-click="showDetails('Nearby Masjid')">
+							<img class="centerImg" src="img/nearbyMasjid.png">
+				</div>
+				<div class="col col-50 content-box">
+							<img class="centerImg" src="img/searchMasjid.png">
+				</div>
+			</div>
+		</div>
+		<div class="operation-buttons">
+			<div class="row" ng-hide="userIdentification == true">
+				<div class="col col-40 col-offset-10"><button class="button button-positive centerImg2" ng-click = "gotoSignUp()">SignUp</button></div>
+				<div class="col col-40" ><button class="button button-positive centerImg2" ng-click = "gotoLogin()">Login</button></div>
+			</div>
+			<div class="row" ng-hide="userIdentification == false">
+				<div class="col col-80 col-offset-10" ng-hide="userIdentification == false"><button class="button button-block" style="background-color:#3880fa" ng-click = "gotoDashboard()" >Dashboard</button></div>
+			</div>
+		</div>
+	</ion-content>
+</ion-view>
