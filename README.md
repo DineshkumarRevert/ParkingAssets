@@ -1,2 +1,2 @@
 # ParkingAssets
-Which is used to parking our assets in a correct place
+Which is used to park our assets in a correct place.
